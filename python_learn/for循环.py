@@ -54,12 +54,12 @@ for i in range(1, 10):
 # 训练案例：发工资
 salary = 10000
 for name in range(1, 21):
-    jixiao = random.randint(1, 10)
-    if jixiao < 5:
-        print(f"员工{name},绩效{jixiao},低于5，不发工资，下一位。")
+    JiXiao = random.randint(1, 10)
+    if JiXiao < 5:
+        print(f"员工{name},绩效{JiXiao},低于5，不发工资，下一位。")
         continue
     if salary == 0:
-        if name !=20:
+        if name != 20:
             print("工资发完了，下个月再来吧")
         break
     salary -= 1000
